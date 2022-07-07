@@ -1,5 +1,4 @@
 echo "Running the command script"
-mkdir -p /workspace/.dbt
-ln -snf /workspace/.dbt ~/.dbt
 
-export PGPASSWORD=gitpod PGDATABASE=dbt
+export PGPASSWORD=gitpod PGDATABASE=corise
+nohup env -u PGHOSTADDR pgweb --url postgres://gitpod:gitpod@localhost:5432/corise &>/dev/null &

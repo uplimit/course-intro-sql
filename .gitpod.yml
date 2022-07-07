@@ -1,4 +1,4 @@
-image: corise/dbt-course-gitpod
+image: corise/sql-course-gitpod
 tasks:
   - init: |
       ./gitpod-init.sh
@@ -8,10 +8,6 @@ ports:
   - port: 8000
     onOpen: open-browser
   - port: 8081
-    onOpen: open-preview
+    onOpen: open-browser
   - port: 5432
     onOpen: ignore
-vscode:
-  extensions:
-    - github.vscode-pull-request-github
-    - cweijan.vscode-database-client2
